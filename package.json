@@ -5,7 +5,7 @@
     "url": "https://github.com/david-kalmakoff/sendgrid-mail-utility"
   },
   "version": "1.0.0",
-  "description": "Javascript (NodeJS) package to easily send styled emails through Sendrid.",
+  "description": "Javascript (NodeJS) package to easily send styled emails through Sendgrid.",
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsc -w & nodemon dist/index.js",

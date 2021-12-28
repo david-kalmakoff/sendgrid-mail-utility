@@ -10,12 +10,11 @@ export default class Zoom {
   }
 
   /**
-   * Create a meeting
-   * https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingcreate
+   * Filler
    * @param {object} options Options create a meeting
    * @return {void}
    */
-  createMeeting(options: CreateMeeting): Promise<object> {
+  filler(options: CreateMeeting): Promise<object> {
     return new Promise(async (resolve, reject) => {
       try {
         await resolve();
