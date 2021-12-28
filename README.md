@@ -10,6 +10,8 @@ npm install @david-kalmakoff/sendgrid-mail-utility
 
 ## Add Package to Project
 
+- Requires environment variable: SENDGRID_API_KEY to be set with API key.
+
 ```javascript
 const Email = require("@david-kalmakoff/sendgrid-mail-utility").default;
 
