@@ -12,8 +12,33 @@ npm install @david-kalmakoff/sendgrid-mail-utility
 
 ```javascript
 const Email = require("@david-kalmakoff/sendgrid-mail-utility").default;
-const emailOptions = {};
-const email = new Email(emailOptions);
+
+const mailConfig = {
+  emailFrom: "Email to send from", // string
+  url: "URL for link on email", // string
+  logo: "URL to image", // string
+  title: "Email Title", // string
+  colorPrimary: "#153643", // optional string with color hexadecimal
+  colorSecondary: "#0e1726", // optional string with color hexadecimal
+};
+
+const mail = new Email(mailConfig);
 ```
 
-## Upcoming Features
+## Send Email
+
+```javascript
+(async () => {
+  try {
+    const email = {
+      emailTo: "Email to send to", // string or array of strings
+      subject: "This is the subject.", // string
+      text: "This is the text for the email.", // string or table
+      table: { first: "this", second: "that" }, // object to create table email
+    };
+    await mail.sendEmail(email);
+  } catch (error) {
+    console.log(error);
+  }
+})();
+```
