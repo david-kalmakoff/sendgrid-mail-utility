@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/david-kalmakoff/sendgrid-mail-utility"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript (NodeJS) package to easily send styled emails through Sendgrid.",
   "main": "dist/index.js",
   "scripts": {
